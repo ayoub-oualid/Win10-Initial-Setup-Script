@@ -4097,6 +4097,19 @@ Function Restart {
 #endregion Auxiliary Functions
 ##########
 
+##########
+#additional functions
+##########
+#set account group administrator 
+Function SetAdmin {
+	Write-Output "Setting account group administrator..."
+	Remove-LocalGroupMember -Group 'administrateurs' -Member '$env:USERNAME'
+}
+#unset account group administrator
+function UnsetAdmin {
+	Write-Output "Unsetting account group administrator..."
+	Remove-LocalGroupMember -Group 'administrateurs' -Member '$env:USERNAME'
+}
 
 
 # Export functions

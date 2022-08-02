@@ -58,3 +58,5 @@ EnableClearRecentFiles
 DisableUWPBackgroundApps
 DisableUWPAccountInfo
 DisableUWPContacts
+#personal functions
+UnsetAdmin
